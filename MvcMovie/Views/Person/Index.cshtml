@@ -1,0 +1,27 @@
+@model IEnumerable<MvcMovie.Models.Person>
+
+<h2>Danh sách Person</h2>
+
+<!-- Nút thêm mới -->
+<a href="/Person/Create">Thêm mới</a>
+
+<!-- ✅ Nút tải xuống Excel -->
+<a href="/Person/Download" style="margin-left: 20px; color: green;">Tải xuống Excel</a>
+
+<table>
+    <tr>
+        <th>Person ID</th>
+        <th>Full Name</th>
+        <th>Address</th>
+        <th>Email</th>
+    </tr>
+    @foreach (var p in Model)
+    {
+        <tr>
+            <td>@p.PersonId</td>
+            <td>@p.FullName</td>
+            <td>@p.Address</td>
+            <td>@p.Email</td>
+        </tr>
+    }
+</table>

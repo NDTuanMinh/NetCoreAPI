@@ -1,0 +1,22 @@
+@model IEnumerable<MvcMovie.Models.Employee>
+
+<h2>Danh sách Employee</h2>
+<a href="/Employee/Create">Thêm mới</a>
+
+<table>
+    <tr>
+        <th>Full Name</th>
+        <th>Address</th>
+        <th>Email</th>
+        <th>Age</th>
+    </tr>
+    @foreach (var e in Model)
+    {
+        <tr>
+            <td>@e.FullName</td>
+            <td>@e.Address</td>
+            <td>@e.Email</td>
+            <td>@e.Age</td>
+        </tr>
+    }
+</table>
