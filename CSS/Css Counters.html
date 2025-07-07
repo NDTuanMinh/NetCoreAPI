@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  counter-reset: section;
+}
+
+h1 {
+  counter-reset: subsection;
+}
+
+h1::before {
+  counter-increment: section;
+  content: "Section " counter(section) ". ";
+}
+
+h2::before {
+  counter-increment: subsection;
+  content: counter(section) "." counter(subsection) " ";
+}
+</style>
+</head>
+<body>
+
+
+<h1>Chương I</h1>
+<h2>Phần 1</h2>
+<h2>Phần 2</h2>
+<h2>Phần 3</h2>
+<h2>Phần 4</h2>
+
+<h1>Chương II</h1>
+<h2>JavaScript</h2>
+<h2>jQuery</h2>
+<h2>React</h2>
+
+<h1>Chương III</h1>
+<h2>Python</h2>
+<h2>Java</h2>
+<h2>C++</h2>
+
+</body>
+</html>

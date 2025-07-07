@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Nguyễn Đăng Tuấn Minh - 2121080032 - CSS trong HTML</title>
+
+  <style>
+    /* CSS nội bộ (internal CSS) */
+    body {
+      background-color: #f4f4f4;
+      font-family: Arial, sans-serif;
+    }
+
+    h1 {
+      color: darkblue;
+      text-align: center;
+    }
+
+    h2 {
+      text-align: center;
+      color: #333;
+    }
+
+    .box {
+      background-color: white;
+      border: 2px solid #0077cc;
+      padding: 15px;
+      margin: 20px auto;
+      width: 80%;
+      box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
+    }
+
+    .highlight {
+      color: green;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Bài thực hành: CSS trong HTML</h1>
+
+  <h2>Nguyễn Đăng Tuấn Minh | Mã sinh viên: 2121080032</h2>
+
+  <div class="box">
+    <p>
+      Đây là đoạn văn được định dạng bằng <span class="highlight">CSS nội bộ</span>, thông qua thẻ &lt;style&gt; trong phần &lt;head&gt;.
+    </p>
+  </div>
+
+  <div class="box">
+    <p style="color: red; font-size: 18px;">
+      Đây là đoạn văn được định dạng bằng <strong>CSS nội tuyến (inline)</strong> ngay trong thẻ &lt;p&gt;.
+    </p>
+  </div>
+
+  <div class="box">
+    <p>
+      Nếu sử dụng <strong>CSS ngoài (external CSS)</strong>, bạn sẽ liên kết bằng thẻ:<br>
+      <code>&lt;link rel="stylesheet" href="style.css"&gt;</code><br>
+      (Ví dụ này chỉ mô phỏng vì không có file style.css kèm theo)
+    </p>
+  </div>
+
+</body>
+</html>

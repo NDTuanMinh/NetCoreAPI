@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Form Elements - Nguyễn Đăng Tuấn Minh</title>
+</head>
+<body>
+
+  <h2>Biểu mẫu tổng hợp</h2>
+  <p>Nguyễn Đăng Tuấn Minh - 2121080032</p>
+
+  <form>
+
+    <fieldset>
+      <legend>Thông tin cá nhân</legend>
+
+      <label for="name">Họ tên:</label><br>
+      <input type="text" id="name" name="name"><br><br>
+
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" name="email"><br><br>
+
+      <label for="city">Chọn thành phố:</label><br>
+      <select id="city" name="city">
+        <optgroup label="Miền Bắc">
+          <option value="hn">Hà Nội</option>
+          <option value="hp">Hải Phòng</option>
+        </optgroup>
+        <optgroup label="Miền Nam">
+          <option value="hcm">TP. Hồ Chí Minh</option>
+          <option value="ct">Cần Thơ</option>
+        </optgroup>
+      </select><br><br>
+
+      <label for="nganh">Ngành học:</label><br>
+      <input list="nganhs" id="nganh" name="nganh">
+      <datalist id="nganhs">
+        <option value="Công nghệ thông tin">
+        <option value="Kinh tế">
+        <option value="Sư phạm">
+      </datalist><br><br>
+
+      <label for="note">Ghi chú:</label><br>
+      <textarea id="note" name="note" rows="4" cols="30"></textarea><br><br>
+
+    </fieldset>
+
+    <

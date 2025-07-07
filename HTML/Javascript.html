@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Nguyễn Đăng Tuấn Minh - 2121080032 - JavaScript cơ bản</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+
+    #ketqua {
+      color: green;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+
+    button {
+      padding: 10px 20px;
+      background-color: #2196f3;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #0b7dda;
+    }
+  </style>
+</head>
+<body>
+
+  <h1 style="text-align: center; color: darkblue;">
+    Bài thực hành: JavaScript cơ bản trong HTML
+  </h1>
+
+  <h2 style="text-align: center;">
+    Họ tên: Nguyễn Đăng Tuấn Minh | Mã sinh viên: 2121080032
+  </h2>
+
+  <hr>
+
+  <h3>1. Hiển thị thông báo bằng <code>alert()</code>:</h3>
+  <button onclick="chao()">Bấm để chào</button>
+
+  <h3>2. Gán nội dung bằng JavaScript:</h3>
+  <button onclick="hienthi()">Hiển thị nội dung</button>
+  <p id="ketqua"></p>
+
+  <h3>3. Ghi log ra Console:</h3>
+  <button onclick="logConsole()">Ghi vào console</button>
+
+  <script>
+    // Hàm alert đơn giản
+    function chao() {
+      alert("Xin chào! Mình là Nguyễn Đăng Tuấn Minh - MSSV 2121080032");
+    }
+
+    // Hàm thay đổi nội dung trong phần tử có id="ketqua"
+    function hienthi() {
+      document.getElementById("ketqua").innerHTML = "Chào bạn! Đây là nội dung do JavaScript tạo ra.";
+    }
+
+    // Hàm ghi ra bảng console
+    function logConsole() {
+      console.log("Console log: Đây là thông tin kiểm tra từ JavaScript.");
+    }
+  </script>
+
+</body>
+</html>
